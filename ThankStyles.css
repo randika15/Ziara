@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ececec;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    animation: slide-in 1s ease-out;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+    animation-delay: 0.9s;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Makes the link look like a button */
+    display: inline-block; /* Ensures the link behaves like a block element */
+}
+
+.login-btn:hover {
+    background-color: #454646;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

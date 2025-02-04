@@ -1,0 +1,160 @@
+/* Admin Panel Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #9ab1bb);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.admin-panel {
+    width: 100%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #721728; /* Stylish green header */
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-button {
+    padding: 10px 25px;
+    background-color: #000000; /* Modern pink button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: #000000;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#add-product-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#add-product-form input,
+#add-product-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#add-product-form button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#add-product-form button:hover {
+    background-color: #45a049;
+}
+
+/* Product list and cards styling */
+#product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.product-card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #555;
+}
+
+.product-card .remove-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .remove-button:hover {
+    background-color: #130d0d;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+

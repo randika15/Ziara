@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #f4f3f3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+.forgot-password {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #0066FF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-continue {
+    width: 100%;
+    padding: 12px;
+    background-color: #D60000;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn-continue a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-continue:hover {
+    background-color: #b80000;
+}
+
+
+
+
+.btn {
+    display: flex;
+    align-items: center; 
+    width: 250px; 
+    padding: 10px; 
+    border: none; 
+    cursor: pointer;
+    gap: 10px; 
+    background-color: #f5f5f5;
+    border-radius: 5px; 
+    margin: 20px 0 10px 30px;
+}
+.btn:hover {
+    background-color: #545353;
+}
+
+.btn img {
+    width: 30px;
+    height: auto; 
+}
+
+.btn h5 {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for text */
+}
+
+.btn-google {
+    background-color: #fff; /* Background color specific to Google button */
+}
+
+.btn-apple {
+    background-color: #fff; /* Background color specific to Apple button */
+}
+
+
+.signup p {
+    font-size: 14px;
+    color: #666;
+}
+
+.signup a {
+    color: #0066FF;
+    text-decoration: none;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.or-divider span {
+    background-color:none;
+    padding: 0 10px;
+    color: #666;
+}
+
+.or-divider:before, .or-divider:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+

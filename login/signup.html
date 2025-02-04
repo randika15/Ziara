@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziara Signup</title>
+    <link rel="stylesheet" href="/Ziara/login/signup.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="/Ziara/login/Untitled design.png" alt="Ziara logo">
+        </div>
+        <h2>Welcome</h2>
+        <p>Signup to get the most of Ziara</p>
+        <form id="signupForm" action="/Ziara/login/signup_process.php" method="POST" onsubmit="handleFormSubmit(event)">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email address" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="show-password">&#128065;</span> 
+            </div>
+
+            <!-- <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div> -->
+
+            <!-- Change button type to submit -->
+            <button type="submit" class="btn-continue">Continue</button>
+
+            <div class="signup">
+                <p>Already have an account? <a href="/Ziara/login/login.html">Login </a></p>
+            </div>
+            <div class="or-divider">
+                <span>OR</span>
+            </div>
+
+            <button type="button" class="btn btn-google">
+                <img src="/Ziara/login/7123025_logo_google_g_icon.png" alt="Google Logo">
+                <h5>Continue with Google</h5>
+            </button>
+            <button type="button" class="btn btn-apple">
+                <img src="/Ziara/login/104490_apple_icon.png" alt="Apple Logo">
+                <h5>Continue with Apple</h5>
+            </button>
+            
+            <div class="facebook-login">
+                <a href="#">Looking for Facebook Social Login?</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

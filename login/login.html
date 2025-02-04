@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziara Login</title>
+    <link rel="stylesheet" href="/ziara/login/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="/ziara/login/Untitled design.png" alt="Ziara logo">
+        </div>
+        <h2>Welcome</h2>
+        <p>Login in to get the most of Ziara</p>
+        <form action="/Ziara/login/login_process.php" method="POST">
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email address" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="show-password">&#128065;</span> <!-- Eye icon -->
+            </div>
+            <!-- <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div> -->
+            <button type="submit" class="btn-continue">Continue</button>
+            <div class="signup">
+                <p>Don't have an account? <a href="/Ziara/login/signup.html">Sign up</a></p>
+            </div>
+            <div class="or-divider">
+                <span>OR</span>
+            </div>
+
+            <button type="button" class="btn btn-google">
+                <img src="/Ziara/login/7123025_logo_google_g_icon.png" alt="Google Logo">
+                <h5>Continue with Google</h5>
+            </button>
+            <button type="button" class="btn btn-apple">
+                <img src="/Ziara/login/104490_apple_icon.png" alt="Apple Logo">
+                <h5>Continue with Apple</h5>
+            </button>
+            
+            <div class="facebook-login">
+                <a href="#">Looking for Facebook Social Login?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

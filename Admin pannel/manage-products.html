@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Manage Products</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/Ziara/css/admin-style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Admin Panel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="/Ziara/index.html">Back to Site</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#" id="logout">Logout</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+   <div class="container mt-5">
+      <h2>Manage Products</h2>
+      <!-- Add Product Form -->
+      <div class="card mb-4">
+         <div class="card-header">
+            <h5 class="card-title"><i class="fa fa-plus"></i> Add New Product</h5>
+         </div>
+         <div class="card-body">
+            <form id="addProductForm" action="/Ziara/Admin pannel/add_product.php" method="POST">
+               <div class="form-group">
+                  <label for="productName">Product Name</label>
+                  <input type="text" class="form-control" id="productName" name="name" placeholder="Enter product name" required>
+               </div>
+               <div class="form-group">
+                  <label for="productPrice">Price</label>
+                  <input type="number" class="form-control" id="productPrice" name="price" placeholder="Enter price" required>
+               </div>
+               <div class="form-group">
+                  <label for="productImage">Image URL</label>
+                  <input type="text" class="form-control" id="productImage" name="image" placeholder="Enter image URL" required>
+               </div>
+               <button type="submit" class="btn btn-primary">Add Product</button>
+            </form>
+            
+         </div>
+      </div>
+
+      <!-- Product Table -->
+      <div class="card">
+         <div class="card-header">
+            <h5 class="card-title"><i class="fa fa-cube"></i> Product List</h5>
+         </div>
+         <div class="card-body">
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th>ID</th>
+                     <th>Name</th>
+                     <th>Price</th>
+                     <th>Image</th>
+                     <th>Actions</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <!-- Example Row -->
+                  <tr>
+                     <td>1</td>
+                     <td>Casual Wear Linen</td>
+                     <td>Rs 4,990.00</td>
+                     <td><img src="/Ziara/images/home/CasualWearLinen.webp" width="50" alt="Product Image"></td>
+                     <td>
+                        <button class="btn btn-sm btn-primary"><i class="fa fa-edit"></i> Edit</button>
+                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                     </td>
+                  </tr>
+                  <!-- Add more rows dynamically -->
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+
+   <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script>
+      // Logout functionality
+      $('#logout').click(function () {
+         if (confirm("Are you sure you want to logout?")) {
+            window.location.href = "/Ziara/login/login.html";
+         }
+      });
+
+      // Add product form submission (demo only)
+      // $('#addProductForm').submit(function (e) {
+      //    e.preventDefault();
+      //    alert("Product added successfully!"); // Replace with backend logic
+      //    $('#addProductForm')[0].reset();
+      // });
+   </script> -->
+</body>
+</html>

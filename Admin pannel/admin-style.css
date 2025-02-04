@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+ }
+ 
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+ }
+ 
+ /* Admin Login Page */
+ .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .card-header {
+    background-color: #f26522;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 20px;
+ }
+ 
+ .card-body {
+    padding: 30px;
+ }
+ 
+ .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+ }
+ 
+ .btn-primary {
+    background-color: #f26522;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .btn-primary:hover {
+    background-color: #e65a1a;
+ }
+ 
+ /* Admin Panel Page */
+ .navbar {
+    background-color: #f26522 !important;
+    padding: 15px 0;
+ }
+ 
+ .navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff !important;
+ }
+ 
+ .nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+ }
+ 
+ .nav-link:hover {
+    color: #ffd700 !important;
+ }
+ 
+ .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+ }
+ 
+ .card-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+ }
+ 
+ .btn-block {
+    width: 100%;
+    margin-bottom: 10px;
+ }
+ 
+ /* Table Styles (for Manage Products, Orders, Users) */
+ .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+ }
+ 
+ .table th,
+ .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+ }
+ 
+ .table th {
+    background-color: #f26522;
+    color: #fff;
+ }
+ 
+ .table tr:hover {
+    background-color: #f5f5f5;
+ }
+ 
+ /* Buttons in Tables */
+ .btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-right: 5px;
+ }
+ 
+ .btn-danger {
+    background-color: #dc3545;
+    border: none;
+ }
+ 
+ .btn-danger:hover {
+    background-color: #c82333;
+ }
+ 
+ .btn-success {
+    background-color: #28a745;
+    border: none;
+ }
+ 
+ .btn-success:hover {
+    background-color: #218838;
+ }
+ 
+ /* Footer Styles */
+ .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+ }
+ 
+ .footer a {
+    color: #f26522;
+    text-decoration: none;
+ }
+ 
+ .footer a:hover {
+    text-decoration: underline;
+ }
